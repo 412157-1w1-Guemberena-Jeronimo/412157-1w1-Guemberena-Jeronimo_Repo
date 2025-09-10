@@ -1604,11 +1604,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Ejercicio 1.5 [Comercio].csproj",
+      "projectUniqueName": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\Ejercicio 1.5 [Comercio]\\Ejercicio 1.5 [Comercio].csproj",
       "projectName": "Ejercicio 1.5 [Comercio]",
-      "projectPath": "C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Ejercicio 1.5 [Comercio].csproj",
+      "projectPath": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\Ejercicio 1.5 [Comercio]\\Ejercicio 1.5 [Comercio].csproj",
       "packagesPath": "C:\\Users\\jerog\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\obj\\",
+      "outputPath": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\Ejercicio 1.5 [Comercio]\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

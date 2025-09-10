@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ftaPzNOJm8U=",
+  "dgSpecHash": "6YQd3XQXHIA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jerog\\Desktop\\ComercioApiRest\\ComercioApiRest.csproj",
+  "projectFilePath": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\ComercioApiRest\\ComercioApiRest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jerog\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\jerog\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

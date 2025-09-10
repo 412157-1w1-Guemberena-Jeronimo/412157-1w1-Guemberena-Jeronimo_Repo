@@ -1,4 +1,6 @@
 using Ejercicio_1._5__Comercio_.Services;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,11 +11,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IArticleService, ArticleService>();
-builder.Services.AddScoped<IBudgetService, BudgetService>(sp =>
-{
-    var cnnString = builder.Configuration.GetConnectionString("DefaultConnection");
-    return new BudgetService(cnnString);
-});
+builder.Services.AddScoped<IBudgetService>(provider =>
+    new BudgetService(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 var app = builder.Build();
 

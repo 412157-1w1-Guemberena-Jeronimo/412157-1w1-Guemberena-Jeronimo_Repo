@@ -18,7 +18,7 @@ namespace ComercioApiRest.Controllers
         }
         // GET: api/<BudgetsController>
         [HttpGet]
-        public IActionResult GetBudgets()
+        public IActionResult GetBudgets()//Funciona pero el payMethod lo envia como null (Error en sp o en el mapeo?)
         {
             try
             {
