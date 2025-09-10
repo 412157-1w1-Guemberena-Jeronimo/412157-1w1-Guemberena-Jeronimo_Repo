@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jerog\\Desktop\\ComercioApiRest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|c:\\users\\jerog\\desktop\\comercioapirest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|c:\\users\\jerog\\desktop\\comercioapirest\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|solutionrelative:controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|c:\\users\\jerog\\desktop\\comercioapirest\\comercioapirest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|solutionrelative:comercioapirest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC084F6-81C0-ED9A-F391-3A96786373A7}|..\\Ejercicio 1.5 [Comercio]\\Ejercicio 1.5 [Comercio].csproj|c:\\users\\jerog\\desktop\\ejercicio 1.5 [comercio]\\data\\articlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC084F6-81C0-ED9A-F391-3A96786373A7}|..\\Ejercicio 1.5 [Comercio]\\Ejercicio 1.5 [Comercio].csproj|c:\\users\\jerog\\desktop\\ejercicio 1.5 [comercio]\\services\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC084F6-81C0-ED9A-F391-3A96786373A7}|..\\Ejercicio 1.5 [Comercio]\\Ejercicio 1.5 [Comercio].csproj|c:\\users\\jerog\\desktop\\ejercicio 1.5 [comercio]\\services\\articleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC084F6-81C0-ED9A-F391-3A96786373A7}|..\\Ejercicio 1.5 [Comercio]\\Ejercicio 1.5 [Comercio].csproj|c:\\users\\jerog\\desktop\\ejercicio 1.5 [comercio]\\services\\iarticleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\ComercioApiRest\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\ComercioApiRest\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T13:35:02.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ArticleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Data\\ArticleRepository.cs",
+              "RelativeDocumentMoniker": "..\\Ejercicio 1.5 [Comercio]\\Data\\ArticleRepository.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Data\\ArticleRepository.cs",
+              "RelativeToolTip": "..\\Ejercicio 1.5 [Comercio]\\Data\\ArticleRepository.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwDAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T13:32:12.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Services\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Ejercicio 1.5 [Comercio]\\Services\\Program.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Services\\Program.cs",
+              "RelativeToolTip": "..\\Ejercicio 1.5 [Comercio]\\Services\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T13:31:39.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ArticleService.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Services\\ArticleService.cs",
+              "RelativeDocumentMoniker": "..\\Ejercicio 1.5 [Comercio]\\Services\\ArticleService.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Services\\ArticleService.cs",
+              "RelativeToolTip": "..\\Ejercicio 1.5 [Comercio]\\Services\\ArticleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T13:25:00.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IArticleService.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Services\\IArticleService.cs",
+              "RelativeDocumentMoniker": "..\\Ejercicio 1.5 [Comercio]\\Services\\IArticleService.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Services\\IArticleService.cs",
+              "RelativeToolTip": "..\\Ejercicio 1.5 [Comercio]\\Services\\IArticleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T13:24:48.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ArticlesController.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\ComercioApiRest\\Controllers\\ArticlesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ArticlesController.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\ComercioApiRest\\Controllers\\ArticlesController.cs",
+              "RelativeToolTip": "Controllers\\ArticlesController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAowHwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T13:17:39.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ComercioApiRest.csproj",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\ComercioApiRest\\ComercioApiRest.csproj",
+              "RelativeDocumentMoniker": "ComercioApiRest.csproj",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\ComercioApiRest\\ComercioApiRest.csproj",
+              "RelativeToolTip": "ComercioApiRest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-10T13:12:08.104Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
