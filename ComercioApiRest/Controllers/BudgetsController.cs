@@ -1,5 +1,7 @@
-﻿using Ejercicio_1._5__Comercio_.Services;
+﻿using Ejercicio_1._5__Comercio_.Domain;
+using Ejercicio_1._5__Comercio_.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Identity.Client;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -18,11 +20,31 @@ namespace ComercioApiRest.Controllers
         }
         // GET: api/<BudgetsController>
         [HttpGet]
-        public IActionResult GetBudgets()//Funciona pero el payMethod lo envia como null (Error en sp o en el mapeo?)
+        public IActionResult GetBudgets()//Funciona pero no devuelve detalle
         {
             try
             {
-                return Ok(_service.GetAllBudgets());
+                var Budgets = _service.GetAllBudgets();
+                
+                foreach (Budget b in Budgets)
+                {
+                    
+                    var details = b.GetDetails();
+                    if (details.Count > 0)
+                    {
+                        foreach (var d in details)
+                        {
+                            b.AddDetail(d);
+                            return Ok(b);
+                        }
+                    }
+                    else
+                    {
+                        return BadRequest();
+                    }
+                    
+                }
+                throw new Exception("No se encontraron facturas con ese id");
             }
             catch (Exception)
             {
@@ -33,9 +55,22 @@ namespace ComercioApiRest.Controllers
 
         // GET api/<BudgetsController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public IActionResult Get(int id)//Era nomas que estaba buscando una factura que no existia, igual me di cuenta que no estoy devolviendo el detalle
         {
-            return "value";
+            try
+            {
+                var budgetById = _service.GetBudgetById(id);
+                if (budgetById != null)
+                {
+                    return Ok(budgetById);
+                }
+                return BadRequest();
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(StatusCodes.Status404NotFound, new { mensaje = "Presupuesto no encontrado" });
+            }
         }
 
         // POST api/<BudgetsController>

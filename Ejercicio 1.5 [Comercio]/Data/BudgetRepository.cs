@@ -44,7 +44,9 @@ namespace Ejercicio_1._5__Comercio_.Data
                                 Client = (string)(reader["cliente"]),
                                 PayMethod = new PayMethod
                                 {
-                                    Id = (int)(reader["cod_formaPago"])
+                                    Id = (int)(reader["cod_formaPago"]),
+                                    Name = (string)(reader["descripcion"])
+
                                 }
                             };
                             var detail = new BudgetDetail()
