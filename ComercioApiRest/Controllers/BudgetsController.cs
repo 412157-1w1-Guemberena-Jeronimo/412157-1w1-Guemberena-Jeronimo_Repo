@@ -102,8 +102,29 @@ namespace ComercioApiRest.Controllers
 
         // PUT api/<BudgetsController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public IActionResult Put(int id, [FromBody] Budget value)
         {
+            try
+            {
+                if(value == null || value.Id != id)
+                {
+                    return BadRequest("Datos de presupuesto incorrectos");
+                }
+                var budget = _service.UpdateBudget(value);
+                if(budget)
+                {
+                    return Ok("Presupuesto actualizado correctamente");
+                }
+                else
+                {
+                    return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = "Error al actualizar el presupuesto" });
+                }
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = "Error al actualizar el presupuesto" });
+            }
         }
 
         // DELETE api/<BudgetsController>/5

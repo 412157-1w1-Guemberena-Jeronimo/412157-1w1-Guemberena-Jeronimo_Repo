@@ -3,15 +3,25 @@
   "WorkspaceRootPath": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\ComercioApiRest\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5AC084F6-81C0-ED9A-F391-3A96786373A7}|..\\Ejercicio 1.5 [Comercio]\\Ejercicio 1.5 [Comercio].csproj|c:\\users\\jerog\\desktop\\412157-1w1-guemberena-jeronimo_repo\\ejercicio 1.5 [comercio]\\data\\budgetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|c:\\users\\jerog\\desktop\\412157-1w1-guemberena-jeronimo_repo\\comercioapirest\\controllers\\budgetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|solutionrelative:controllers\\budgetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Data\\ArticleRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|c:\\users\\jerog\\desktop\\412157-1w1-guemberena-jeronimo_repo\\comercioapirest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|c:\\users\\jerog\\desktop\\412157-1w1-guemberena-jeronimo_repo\\comercioapirest\\controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|solutionrelative:controllers\\articlescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AC084F6-81C0-ED9A-F391-3A96786373A7}|..\\Ejercicio 1.5 [Comercio]\\Ejercicio 1.5 [Comercio].csproj|c:\\users\\jerog\\desktop\\412157-1w1-guemberena-jeronimo_repo\\ejercicio 1.5 [comercio]\\data\\budgetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5AC084F6-81C0-ED9A-F391-3A96786373A7}|..\\Ejercicio 1.5 [Comercio]\\Ejercicio 1.5 [Comercio].csproj|c:\\users\\jerog\\desktop\\412157-1w1-guemberena-jeronimo_repo\\ejercicio 1.5 [comercio]\\services\\budgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5AC084F6-81C0-ED9A-F391-3A96786373A7}|..\\Ejercicio 1.5 [Comercio]\\Ejercicio 1.5 [Comercio].csproj|c:\\users\\jerog\\desktop\\412157-1w1-guemberena-jeronimo_repo\\ejercicio 1.5 [comercio]\\domain\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -21,18 +31,8 @@
       "RelativeMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|solutionrelative:ejercicio_1._5__comercio_.domain\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AC084F6-81C0-ED9A-F391-3A96786373A7}|..\\Ejercicio 1.5 [Comercio]\\Ejercicio 1.5 [Comercio].csproj|c:\\users\\jerog\\desktop\\412157-1w1-guemberena-jeronimo_repo\\ejercicio 1.5 [comercio]\\services\\budgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|c:\\users\\jerog\\desktop\\412157-1w1-guemberena-jeronimo_repo\\comercioapirest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|c:\\users\\jerog\\desktop\\412157-1w1-guemberena-jeronimo_repo\\comercioapirest\\comercioapirest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{F500215C-3607-49A0-9191-6E9944654016}|ComercioApiRest.csproj|solutionrelative:comercioapirest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Data\\ArticleRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Services\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -59,7 +59,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "ArticleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Data\\ArticleRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\Ejercicio 1.5 [Comercio]\\Data\\ArticleRepository.cs",
+              "ToolTip": "C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Data\\ArticleRepository.cs",
+              "RelativeToolTip": "..\\..\\Ejercicio 1.5 [Comercio]\\Data\\ArticleRepository.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T13:32:12.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Budget.cs",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\ComercioApiRest\\Ejercicio_1._5__Comercio_.Domain\\Budget.cs",
               "RelativeDocumentMoniker": "Ejercicio_1._5__Comercio_.Domain\\Budget.cs",
@@ -67,12 +78,11 @@
               "RelativeToolTip": "Ejercicio_1._5__Comercio_.Domain\\Budget.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T21:03:07.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-12T21:03:07.5Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Budget.cs",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\Ejercicio 1.5 [Comercio]\\Domain\\Budget.cs",
               "RelativeDocumentMoniker": "..\\Ejercicio 1.5 [Comercio]\\Domain\\Budget.cs",
@@ -80,31 +90,30 @@
               "RelativeToolTip": "..\\Ejercicio 1.5 [Comercio]\\Domain\\Budget.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T20:02:07.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-12T20:02:07.916Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "BudgetRepository.cs",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\Ejercicio 1.5 [Comercio]\\Data\\BudgetRepository.cs",
               "RelativeDocumentMoniker": "..\\Ejercicio 1.5 [Comercio]\\Data\\BudgetRepository.cs",
               "ToolTip": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\Ejercicio 1.5 [Comercio]\\Data\\BudgetRepository.cs",
               "RelativeToolTip": "..\\Ejercicio 1.5 [Comercio]\\Data\\BudgetRepository.cs",
-              "ViewState": "AgIAAIcAAAAAAAAAAAA7wIsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAgwJYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-11T13:02:16.663Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BudgetsController.cs",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\ComercioApiRest\\Controllers\\BudgetsController.cs",
               "RelativeDocumentMoniker": "Controllers\\BudgetsController.cs",
               "ToolTip": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\ComercioApiRest\\Controllers\\BudgetsController.cs",
               "RelativeToolTip": "Controllers\\BudgetsController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAawF4AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAtwFMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-10T21:43:24.193Z",
               "EditorCaption": ""
@@ -144,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ArticlesController.cs",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\ComercioApiRest\\Controllers\\ArticlesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ArticlesController.cs",
@@ -157,15 +166,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\ComercioApiRest\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\ComercioApiRest\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAADgvyAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T13:35:02.327Z"
+              "WhenOpened": "2025-09-10T13:35:02.327Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -175,24 +185,14 @@
               "RelativeDocumentMoniker": "..\\Ejercicio 1.5 [Comercio]\\Services\\BudgetService.cs",
               "ToolTip": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\Ejercicio 1.5 [Comercio]\\Services\\BudgetService.cs",
               "RelativeToolTip": "..\\Ejercicio 1.5 [Comercio]\\Services\\BudgetService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCcAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAEwCcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T14:39:20.344Z"
+              "WhenOpened": "2025-09-11T14:39:20.344Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ArticleRepository.cs",
-              "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Data\\ArticleRepository.cs",
-              "RelativeDocumentMoniker": "..\\..\\Ejercicio 1.5 [Comercio]\\Data\\ArticleRepository.cs",
-              "ToolTip": "C:\\Users\\jerog\\Desktop\\Ejercicio 1.5 [Comercio]\\Data\\ArticleRepository.cs",
-              "RelativeToolTip": "..\\..\\Ejercicio 1.5 [Comercio]\\Data\\ArticleRepository.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T13:32:12.324Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "ComercioApiRest.csproj",
               "DocumentMoniker": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\ComercioApiRest\\ComercioApiRest.csproj",
               "RelativeDocumentMoniker": "ComercioApiRest.csproj",
