@@ -48,6 +48,15 @@ namespace ComercioApiRest.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         // DELETE api/<BudgetsController>/5
