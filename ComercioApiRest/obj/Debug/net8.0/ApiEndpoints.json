@@ -98,17 +98,11 @@
     "Parameters": [
       {
         "Name": "value",
-        "Type": "System.String",
+        "Type": "Ejercicio_1._5__Comercio_.Domain.Budget",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "ComercioApiRest.Controllers.BudgetsController",

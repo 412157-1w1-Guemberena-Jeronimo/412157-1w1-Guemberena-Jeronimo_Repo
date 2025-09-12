@@ -20,31 +20,25 @@ namespace ComercioApiRest.Controllers
         }
         // GET: api/<BudgetsController>
         [HttpGet]
-        public IActionResult GetBudgets()//Funciona pero no devuelve detalle
+        public IActionResult GetBudgets()//Funciona pero devuelve las facturas 3 y 5 nomas porque son las unicas que cumplen con todos los joins
         {
             try
             {
-                var Budgets = _service.GetAllBudgets();
-                
-                foreach (Budget b in Budgets)
+                List<Budget> Budgets = _service.GetAllBudgets();
+
+
+                if (Budgets == null || Budgets.Count == 0)
+                    return NotFound("No se encontraron facturas");
+                Budgets.Count();
+                // Proyectamos cada budget con sus detalles
+                var result = Budgets.Select(b => new
                 {
-                    
-                    var details = b.GetDetails();
-                    if (details.Count > 0)
-                    {
-                        foreach (var d in details)
-                        {
-                            b.AddDetail(d);
-                            return Ok(b);
-                        }
-                    }
-                    else
-                    {
-                        return BadRequest();
-                    }
-                    
-                }
-                throw new Exception("No se encontraron facturas con ese id");
+                    Budget = b,
+                    Details = b.GetDetails()
+                }).ToList();
+
+                return Ok(result);
+                
             }
             catch (Exception)
             {
@@ -55,16 +49,20 @@ namespace ComercioApiRest.Controllers
 
         // GET api/<BudgetsController>/5
         [HttpGet("{id}")]
-        public IActionResult Get(int id)//Era nomas que estaba buscando una factura que no existia, igual me di cuenta que no estoy devolviendo el detalle
+        public IActionResult Get(int id)//Funciona pero solo sirve con las facturas 3 y 5 porque son las unicas que cumplen con todos los joins
         {
             try
             {
                 var budgetById = _service.GetBudgetById(id);
-                if (budgetById != null)
+                var details = budgetById.GetDetails();
+
+                var result = new
                 {
-                    return Ok(budgetById);
-                }
-                return BadRequest();
+                    Budget = budgetById,
+                    Details = details
+                };
+                return Ok(result);
+                
             }
             catch (Exception)
             {
@@ -75,8 +73,31 @@ namespace ComercioApiRest.Controllers
 
         // POST api/<BudgetsController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Post([FromBody] Budget value)//Funciona, el problema estaba en el mapeo del budget 
         {
+            try
+            {
+                if(value ==null)
+                {
+                    return BadRequest("Datos de factura incorrectos");
+                }
+                var budget = _service.SaveBudget(value);
+                
+
+                if(budget)
+                {
+                    return Ok("Presupuesto guardado correctamente");
+                }
+                else
+                {
+                    return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = "Error al guardar el presupuesto" });
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         // PUT api/<BudgetsController>/5

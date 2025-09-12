@@ -14,17 +14,19 @@ namespace Ejercicio_1._5__Comercio_.Domain
         
         public PayMethod? PayMethod { get; set; }
 
-        private List<BudgetDetail> details;//Esto va privado porque no queremos que nadie pueda modificar la lista details directamente, sino a traves de los metodos que nosotros definamos
+        public List<BudgetDetail> details { get; set; }//Esto va privado porque no queremos que nadie pueda modificar la lista details directamente, sino a traves de los metodos que nosotros definamos
 
+        public List<BudgetDetail> GetDetails() => details; // Esto es un metodo que devuelve la lista details, para que nadie pueda modificarla directamente
         public Budget()// Este constructor sirve para inicializar la lista details y evitar errores de referencia nula
         {
+            Id = 0;
+            Date = DateTime.Now;
             details = new List<BudgetDetail>();
         }
 
-        public List<BudgetDetail> GetDetails()// Devuelve la lista details
-        {
-            return details;
-        }
+
+        // Devuelve la lista details
+      
         public void AddDetail(BudgetDetail detail)//
         {
             if (detail != null)
