@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ComercioApiRest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d53843325baa91d6519858c10bc9984343b288d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f30b1fab03435b9b3db9e409aea445e329d0288c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ComercioApiRest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ComercioApiRest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
