@@ -5,8 +5,6 @@ VisualStudioVersion = 17.14.36429.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComercioApiRest", "ComercioApiRest.csproj", "{F500215C-3607-49A0-9191-6E9944654016}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio 1.5 [Comercio]", "..\Ejercicio 1.5 [Comercio]\Ejercicio 1.5 [Comercio].csproj", "{5AC084F6-81C0-ED9A-F391-3A96786373A7}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{F500215C-3607-49A0-9191-6E9944654016}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F500215C-3607-49A0-9191-6E9944654016}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F500215C-3607-49A0-9191-6E9944654016}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5AC084F6-81C0-ED9A-F391-3A96786373A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5AC084F6-81C0-ED9A-F391-3A96786373A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5AC084F6-81C0-ED9A-F391-3A96786373A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5AC084F6-81C0-ED9A-F391-3A96786373A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

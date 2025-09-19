@@ -24,17 +24,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Article"
+                "$ref": "#/components/schemas/Articulo"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Article"
+                "$ref": "#/components/schemas/Articulo"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Article"
+                "$ref": "#/components/schemas/Articulo"
               }
             }
           }
@@ -47,27 +47,6 @@
       }
     },
     "/api/Articles/{id}": {
-      "get": {
-        "tags": [
-          "Articles"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
       "put": {
         "tags": [
           "Articles"
@@ -87,17 +66,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Article"
+                "$ref": "#/components/schemas/Articulo"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Article"
+                "$ref": "#/components/schemas/Articulo"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Article"
+                "$ref": "#/components/schemas/Articulo"
               }
             }
           }
@@ -149,17 +128,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Budget"
+                "$ref": "#/components/schemas/Factura"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Budget"
+                "$ref": "#/components/schemas/Factura"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Budget"
+                "$ref": "#/components/schemas/Factura"
               }
             }
           }
@@ -172,27 +151,6 @@
       }
     },
     "/api/Budgets/{id}": {
-      "get": {
-        "tags": [
-          "Budgets"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
       "put": {
         "tags": [
           "Budgets"
@@ -212,17 +170,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Budget"
+                "$ref": "#/components/schemas/Factura"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Budget"
+                "$ref": "#/components/schemas/Factura"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Budget"
+                "$ref": "#/components/schemas/Factura"
               }
             }
           }
@@ -258,10 +216,10 @@
   },
   "components": {
     "schemas": {
-      "Article": {
+      "Articulo": {
         "type": "object",
         "properties": {
-          "cod_articulo": {
+          "codArticulo": {
             "type": "integer",
             "format": "int32"
           },
@@ -269,67 +227,63 @@
             "type": "string",
             "nullable": true
           },
-          "pre_unitario": {
+          "preUnitario": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Budget": {
+      "DetallesFactura": {
         "type": "object",
         "properties": {
-          "id": {
+          "codDetalleFactura": {
             "type": "integer",
             "format": "int32"
           },
-          "date": {
-            "type": "string",
-            "format": "date-time"
+          "nro_Factura": {
+            "type": "integer",
+            "format": "int32"
           },
-          "client": {
+          "articulo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cantidad": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Factura": {
+        "type": "object",
+        "properties": {
+          "nro_Factura": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "codFormaPago": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "cliente": {
             "type": "string",
             "nullable": true
           },
-          "payMethod": {
-            "$ref": "#/components/schemas/PayMethod"
-          },
-          "details": {
+          "detallesFacturas": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/BudgetDetail"
+              "$ref": "#/components/schemas/DetallesFactura"
             },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "BudgetDetail": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "article": {
-            "$ref": "#/components/schemas/Article"
-          },
-          "count": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "PayMethod": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string",
             "nullable": true
           }
         },

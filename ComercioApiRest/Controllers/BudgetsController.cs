@@ -1,7 +1,7 @@
-﻿using Ejercicio_1._5__Comercio_.Domain;
-using Ejercicio_1._5__Comercio_.Services;
+﻿using ComercioApiRest.Data;
+using ComercioApiRest.Models;
+using ComercioApiRest.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Identity.Client;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -11,126 +11,61 @@ namespace ComercioApiRest.Controllers
     [ApiController]
     public class BudgetsController : ControllerBase
     {
-
         IBudgetService _service;
-
         public BudgetsController(IBudgetService service)
         {
-            _service = service;
+            _service =service;
         }
+
         // GET: api/<BudgetsController>
         [HttpGet]
-        public IActionResult GetBudgets()//Funciona pero devuelve las facturas 3 y 5 nomas porque son las unicas que cumplen con todos los joins
+        public IActionResult Get()
         {
-            try
+            var lst = _service.GetAll();
+            if(lst != null && lst.Count > 0)
             {
-                List<Budget> Budgets = _service.GetAllBudgets();
-
-
-                if (Budgets == null || Budgets.Count == 0)
-                    return NotFound("No se encontraron facturas");
-                Budgets.Count();
-                // Proyectamos cada budget con sus detalles
-                var result = Budgets.Select(b => new
-                {
-                    Budget = b,
-                    Details = b.GetDetails()
-                }).ToList();
-
-                return Ok(result);
-                
+                return Ok(lst);
             }
-            catch (Exception)
-            {
-
-                return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = "Error al acceder a datos" });
-            }
+            return NotFound("No se encontraron facturas");
         }
 
-        // GET api/<BudgetsController>/5
-        [HttpGet("{id}")]
-        public IActionResult Get(int id)//Funciona pero solo sirve con las facturas 3 y 5 porque son las unicas que cumplen con todos los joins
-        {
-            try
-            {
-                var budgetById = _service.GetBudgetById(id);
-                var details = budgetById.GetDetails();
-
-                var result = new
-                {
-                    Budget = budgetById,
-                    Details = details
-                };
-                return Ok(result);
-                
-            }
-            catch (Exception)
-            {
-
-                return StatusCode(StatusCodes.Status404NotFound, new { mensaje = "Presupuesto no encontrado" });
-            }
-        }
+        
 
         // POST api/<BudgetsController>
         [HttpPost]
-        public IActionResult Post([FromBody] Budget value)//Funciona, el problema estaba en el mapeo del budget 
+        public IActionResult Post([FromBody] Factura factura)
         {
-            try
+            var fact = _service.Save(factura);
+            if (fact)
             {
-                if(value ==null)
-                {
-                    return BadRequest("Datos de factura incorrectos");
-                }
-                var budget = _service.SaveBudget(value);
-                
-
-                if(budget)
-                {
-                    return Ok("Presupuesto guardado correctamente");
-                }
-                else
-                {
-                    return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = "Error al guardar el presupuesto" });
-                }
+                return Ok("Factura guardada correctamente");
             }
-            catch (Exception)
-            {
-
-                throw;
-            }
+            return BadRequest("No se pudo guardar la factura");
         }
 
         // PUT api/<BudgetsController>/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] Budget value)
+        public IActionResult Put(int id, [FromBody] Factura value)
         {
-            try
+            var factura = _service.Save(value);
+            if (factura)
             {
-                if(value == null || value.Id != id)
-                {
-                    return BadRequest("Datos de presupuesto incorrectos");
-                }
-                var budget = _service.UpdateBudget(value);
-                if(budget)
-                {
-                    return Ok("Presupuesto actualizado correctamente");
-                }
-                else
-                {
-                    return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = "Error al actualizar el presupuesto" });
-                }
+                return Ok("Factura actualizada correctamente");
             }
-            catch (Exception)
-            {
-
-                return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = "Error al actualizar el presupuesto" });
-            }
+            return BadRequest("No se pudo actualizar la factura");
         }
 
         // DELETE api/<BudgetsController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)//este metodo tira un error debido a que en el repository no tengo la baja logica
+                                           //y conflictea con la relacion entre facturas y detallesfacturas :(
         {
+            var factura = _service.Delete(id);
+            if (factura)
+            {
+                return Ok("Factura eliminada correctamente");
+            }
+            return BadRequest("No se pudo eliminar la factura");
         }
     }
 }

@@ -1,6 +1,5 @@
-﻿using Ejercicio_1._5__Comercio_.Data;
-using Ejercicio_1._5__Comercio_.Domain;
-using Ejercicio_1._5__Comercio_.Services;
+﻿using ComercioApiRest.Models;
+using ComercioApiRest.Services;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -11,140 +10,85 @@ namespace ComercioApiRest.Controllers
     [ApiController]
     public class ArticlesController : ControllerBase
     {
-        private IArticleService _service;
-
+        IArticleService _service;
         public ArticlesController(IArticleService service)
         {
-            _service = service;
+            _service=service;
+        }
+
+        // GET: api/<ArticlesController>
+        [HttpGet]
+        public IActionResult Get()
+        {
+            var lst = _service.GetAll();
+            if(lst != null && lst.Count > 0)
+            {
+                return Ok(lst);
+            }
+            return NotFound("No se encontraron articulos");
         }
 
         
 
-        // GET: api/<ArticlesController>
-        [HttpGet]
-        public IActionResult GeArticles() //Funciona
+        // POST api/<ArticlesController>
+        [HttpPost]
+        public IActionResult Post([FromBody] Articulo articulo)
         {
             try
             {
-                return Ok(_service.GetArticles());
+                var art = _service.Save(articulo);
+                if (art)
+                {
+                    return Ok("Articulo guardado correctamente");
+                }
+                return BadRequest("No se pudo guardar el articulo");
             }
             catch (Exception ex)
             {
 
-                return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = "Error al acceder a datos" });
-            }
-        }
-
-        // GET api/<ArticlesController>/5
-        [HttpGet("{id}")]
-        public IActionResult GetById(int id)//Funciona
-        {
-
-            try
-            {
-                var article = _service.GetArticleById(id);
-                if (article != null)
-                {
-                    return Ok(article);
-                }
-                else
-                {
-                    throw new Exception("No se encontro un articulo con ese id");
-                }
-
-            }
-
-            catch (Exception)
-            {
-
-                return StatusCode(StatusCodes.Status404NotFound, new { mensaje = "Articulo no encontrado" });
-            }
-        }
-
-        // POST api/<ArticlesController>
-        [HttpPost]
-        public IActionResult Post([FromBody] Article value)//Funciona
-        {
-            try
-            {
-                if(value == null)
-                {
-                    return BadRequest(new { mensaje = "El articulo no puede ser nulo" });
-                }
-                bool isSaved = _service.Save(value);
-                if (isSaved)
-                {
-                    return Ok(new { mensaje =  "Articulo guardado correctamente" });
-                }
-                else
-                {
-                    throw new Exception("No se pudo guardar el articulo");
-                }
-
-            }
-            catch (Exception)
-            {
-
-                throw;
+                throw new Exception (ex.Message);
             }
         }
 
         // PUT api/<ArticlesController>/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] Article value)//Funciona
+        public IActionResult Put(int id, [FromBody] Articulo articulo)
         {
             try
             {
-                if (id != 0 && value!=null)
+                if(id != articulo.CodArticulo)
                 {
-                    var newArticle = _service.Save(value);
-                    if(newArticle)
-                    {
-                        return Ok(new {mensaje = "Articulo actualizado correctamente"});
-                    }
-                    else
-                    {
-                        throw new Exception ("No se pudo actualizar el articulo");
-                    }
+                    return BadRequest("El id del articulo no coincide");
                 }
-                else
+                var art = _service.Save(articulo);
+                if (art)
                 {
-                    throw new Exception("Articulo no encontrado");
+                    return Ok("Articulo actualizado correctamente");
                 }
-
+                return BadRequest("No se pudo actualizar el articulo");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                return StatusCode(StatusCodes.Status404NotFound, new { mensaje = "Articulo no encontrado" });
+                throw new Exception(ex.Message);
             }
         }
 
         // DELETE api/<ArticlesController>/5
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)//Funciona
+        public IActionResult Delete(int id)
         {
             try
             {
-                if(id==0)
+                var art = _service.Delete(id);
+                if (art)
                 {
-                    return BadRequest(new {mensaje = "Debe ingresar el id del articulo a eliminar"});
+                    return Ok("Articulo eliminado correctamente");
                 }
-                bool DeletedArticle= _service.Delete(id);
-                if(DeletedArticle)
-                {
-                    return Ok(new {mensaje = "Articulo eliminado con exito"});
-                }
-                else
-                {
-                    throw new Exception("No se pudo eliminar el articulo (devuelve false?)");
-                }
-
+                return BadRequest("No se pudo eliminar el articulo");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status404NotFound, new { mensaje = "Articulo no encontrado" });
-
+                throw new Exception(ex.Message);
             }
         }
     }
