@@ -105,8 +105,7 @@
               "RelativeToolTip": "Models\\DbContextComercio.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAAAewAgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T19:22:26.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T19:22:26.576Z"
             },
             {
               "$type": "Document",
@@ -118,8 +117,7 @@
               "RelativeToolTip": "..\\Ejercicio 1.5 [Comercio]\\Models\\DbContextComercio.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAQwDkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T19:19:51.997Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T19:19:51.997Z"
             },
             {
               "$type": "Document",
@@ -131,8 +129,7 @@
               "RelativeToolTip": "Models\\DetallesFactura.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T18:47:18.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T18:47:18.852Z"
             },
             {
               "$type": "Document",
@@ -142,7 +139,7 @@
               "RelativeDocumentMoniker": "Controllers\\BudgetsController.cs",
               "ToolTip": "C:\\Users\\jerog\\Desktop\\412157-1w1-Guemberena-Jeronimo_Repo\\ComercioApiRest\\Controllers\\BudgetsController.cs",
               "RelativeToolTip": "Controllers\\BudgetsController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAkwDwAAABuAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAgwDwAAABuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-19T19:14:15.167Z",
               "EditorCaption": ""
@@ -157,8 +154,7 @@
               "RelativeToolTip": "Services\\BudgetService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T19:10:13.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T19:10:13.76Z"
             },
             {
               "$type": "Document",
@@ -170,8 +166,7 @@
               "RelativeToolTip": "Services\\IBudgetService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T19:09:42.336Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T19:09:42.336Z"
             },
             {
               "$type": "Document",
@@ -183,8 +178,7 @@
               "RelativeToolTip": "Data\\BudgetRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAACKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T19:01:48.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T19:01:48.058Z"
             },
             {
               "$type": "Document",
@@ -196,8 +190,7 @@
               "RelativeToolTip": "Data\\IBudgetRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T18:58:10.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T18:58:10.002Z"
             },
             {
               "$type": "Document",
@@ -209,8 +202,7 @@
               "RelativeToolTip": "Models\\Factura.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T18:47:12.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T18:47:12.803Z"
             },
             {
               "$type": "Document",
@@ -222,8 +214,7 @@
               "RelativeToolTip": "Controllers\\ArticlesController.cs",
               "ViewState": "AgIAAEIAAAAAAAAAAAAmwFsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T18:44:41.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T18:44:41.385Z"
             },
             {
               "$type": "Document",
@@ -235,8 +226,7 @@
               "RelativeToolTip": "Data\\ArticleRepository.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwBwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T18:38:35.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T18:38:35.557Z"
             },
             {
               "$type": "Document",
@@ -248,8 +238,7 @@
               "RelativeToolTip": "Data\\IArticleRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T18:37:20.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T18:37:20.77Z"
             },
             {
               "$type": "Document",
@@ -261,8 +250,7 @@
               "RelativeToolTip": "Services\\ArticleService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T18:32:52.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T18:32:52.71Z"
             },
             {
               "$type": "Document",
@@ -274,8 +262,7 @@
               "RelativeToolTip": "Services\\IArticleService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T18:32:06.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T18:32:06.039Z"
             },
             {
               "$type": "Document",
@@ -287,8 +274,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T13:35:02.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T13:35:02.327Z"
             },
             {
               "$type": "Document",
