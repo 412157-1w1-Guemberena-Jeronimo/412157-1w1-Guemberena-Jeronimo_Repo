@@ -1,0 +1,6 @@
+@ModeloParcial_HostAddress = http://localhost:5083
+
+GET {{ModeloParcial_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
